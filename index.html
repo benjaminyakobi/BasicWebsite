@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register-Page</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- <form action="action_page.php"> -->
+    <div class="RegisterContainer">
+        <div class="container">
+            <div class="container signin">
+                <!-- <p>אם אתה כבר רשום אתה מוזמן להיכנס</br></p> -->
+
+                <button type="submit" class="signinbtn" id="toggle">כניסה למנויים</button>
+                <div id="content">
+                    <!-- <label for="email"><b>הכנס כתובת אימייל</b></label> -->
+                    <input type="text" placeholder="כתובת אימייל" name="email" id="email" required>
+
+                    <!-- <label for="psw"><b>הכנס סיסמא</b></label> -->
+                    <input type="password" placeholder="סיסמא" onmouseover="this.type='text'"
+                    onmouseout="this.type='password'" name="password" id="password" required>
+                    <button type="submit" class="signinbtn" id="toggle">Enter</button>
+                </div>
+
+            </div>
+            <hr>
+            <h1>טופס הרשמה</h1>
+            <p>יש להכניס פרטים נכונים בלבד</p>
+            <!-- <hr> -->
+
+            <label for="email"><b>הכנס כתובת אימייל</b></label>
+            <input type="text" placeholder="כתובת אימייל" name="email" id="email" required>
+
+            <!-- <i class="far fa-eye" id="togglePassword"></i> -->
+            <label for="psw"><b>הכנס סיסמא</b></label>
+            <input type="password" placeholder="הכנס סיסמא" onmouseover="this.type='text'"
+            onmouseout="this.type='password'" name="password" id="password" required>
+
+            <label for="psw-repeat"><b>הכנס סיסמא שנית</b></label>
+            <!-- <i class="far fa-eye" id="togglePassword-rpt"></i> -->
+            <input type="password" placeholder="הכנס סיסמא שנית" onmouseover="this.type='text'"
+            onmouseout="this.type='password'" name="psw-repeat" id="psw-repeat" required>
+            <hr>
+
+            <!-- <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p> -->
+            <button type="submit" class="registerbtn">הירשם</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+
+    <div class="gallery">
+        <img src="amit.png" width="600" height="400">
+    </div>
+
+    <!-- </form> -->
+</body>
+
+</html>
